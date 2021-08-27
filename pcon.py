@@ -17,7 +17,7 @@ def power_button():
     io.output(relay, 0)
 
 def voltage_check():
-    if io.input(psupply) == 1:
+    if pc_on:
         print("PC is ON!")
     else:
         print("Error: no voltage detected...")
